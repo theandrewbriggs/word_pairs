@@ -1,6 +1,4 @@
-from random import choice
-
-
+import random
 
 fruits = [
     'apple',
@@ -46,5 +44,65 @@ pets = [
     'python',
 ]
 
-s = choice(fruits) + ' ' + choice(pets)
+colors = [
+    'amber',
+    'aqua',
+    'black',
+    'blue',
+    'bronze',
+    'cobalt',
+    'coral',
+    'cream',
+    'denim',
+    'drab',
+    'emerald',
+    'forest',
+    'grape',
+    'gray',
+    'gold',
+    'green',
+    'indigo',
+    'ivory',
+    'jade',
+    'jet',
+    'lilac',
+    'magenta',
+    'mint',
+    'mustard',
+    'navy',
+    'onyx',
+    'pink',
+    'red',
+    'rose',
+    'ruby',
+    'rust',
+    'silver',
+    'sky',
+    'tan',
+    'teal',
+    'tulip',
+    'violet',
+    'white',
+    'yellow',
+]
+
+months = [
+    'january',
+    'february',
+    'march',
+    'april',
+    'may',
+    'june',
+    'july',
+    'august',
+    'september',
+    'october',
+    'november',
+    'december',
+]
+
+arrays = [fruits, pets, colors, months]
+
+tup = random.sample(arrays, 2)
+s = random.choice(tup[0]) + ' ' + random.choice(tup[1])
 print s.lower()
